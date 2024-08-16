@@ -1,0 +1,6288 @@
+{
+  "users": {
+    "slug": "users",
+    "table": {
+      "name": "users",
+      "pk": "user_id",
+      "verbose": "users"
+    },
+    "columns": [
+      {
+        "verbose": "user_id",
+        "name": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "email",
+        "name": "email",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "fullname",
+        "name": "name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "age",
+        "name": "age",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "phone",
+        "name": "phone",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "date_of_birth",
+        "name": "dob",
+        "control": {
+          "date": true
+        },
+        "type": "datetime",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "is_verified",
+        "name": "is_verified",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "0"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": null,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "email_otp",
+        "name": "email_otp",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "phone_otp",
+        "name": "phone_otp",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "profile_image",
+        "name": "profile_image",
+        "control": {
+          "file": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "user_source",
+        "name": "user_source",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "role_id",
+        "name": "role_id",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "password",
+        "name": "encryptedPassword",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "country_code",
+        "verbose": "country_code",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(15)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "watsapp_updates",
+        "verbose": "watsapp_updates",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "courses": {
+    "slug": "courses",
+    "table": {
+      "name": "courses",
+      "pk": "course_id",
+      "verbose": "courses"
+    },
+    "columns": [
+      {
+        "verbose": "course_id",
+        "name": "course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "name",
+        "name": "name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "description",
+        "verbose": "description",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "cost",
+        "verbose": "cost",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "intro_video",
+        "verbose": "intro_video",
+        "control": {
+          "file": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "mentor_id",
+        "verbose": "mentor_id",
+        "control": {
+          "select": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "mentors",
+          "pk": "mentor_id",
+          "columns": [
+            "experties"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "course_modules": {
+    "slug": "course_modules",
+    "table": {
+      "name": "course_modules",
+      "pk": "course_module_id",
+      "verbose": "course_modules"
+    },
+    "columns": [
+      {
+        "verbose": "course_module_id",
+        "name": "course_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "title",
+        "name": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "description",
+        "name": "description",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "thumbnail",
+        "name": "thumbnail",
+        "control": {
+          "file": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "course_id",
+        "name": "course_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "courses",
+          "pk": "course_id",
+          "columns": [
+            "name"
+          ]
+        }
+      },
+      {
+        "verbose": "module_tags",
+        "name": "module_tags",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "course_module_tags",
+            "parentPk": "course_modules_id",
+            "childPk": "module_tags_id"
+          },
+          "ref": {
+            "table": "module_tags",
+            "pk": "module_tag_id",
+            "columns": [
+              "name"
+            ]
+          }
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "module_tags": {
+    "slug": "module_tags",
+    "table": {
+      "name": "module_tags",
+      "pk": "module_tag_id",
+      "verbose": "module_tags"
+    },
+    "columns": [
+      {
+        "verbose": "module_tag_id",
+        "name": "module_tag_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "name",
+        "name": "name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "checkbox": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "course_module_tags": {
+    "slug": "course_module_tags",
+    "table": {
+      "name": "course_module_tags",
+      "pk": "course_module_tag_id",
+      "verbose": "course_module_tags"
+    },
+    "columns": [
+      {
+        "verbose": "course_modules_id",
+        "name": "course_modules_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "module_tags_id",
+        "name": "module_tags_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_module_tag_id",
+        "verbose": "course_module_tag_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "course_reference": {
+    "slug": "course_reference",
+    "table": {
+      "name": "course_reference",
+      "pk": "course_reference_id",
+      "verbose": "course_reference"
+    },
+    "columns": [
+      {
+        "verbose": "course_reference_id",
+        "name": "course_reference_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "reference",
+        "name": "reference",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "reference_type",
+        "name": "reference_type",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "0"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "course_id",
+        "name": "course_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "courses",
+          "pk": "course_id",
+          "columns": [
+            "name"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "lectures": {
+    "slug": "lectures",
+    "table": {
+      "name": "lectures",
+      "pk": "lecture_id",
+      "verbose": "lectures"
+    },
+    "columns": [
+      {
+        "verbose": "lecture_id",
+        "name": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "title",
+        "name": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "summary",
+        "name": "summary",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "course_id",
+        "name": "course_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "courses",
+          "pk": "course_id",
+          "columns": [
+            "name"
+          ]
+        }
+      },
+      {
+        "verbose": "course_module_id",
+        "name": "course_module_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "course_modules",
+          "pk": "course_module_id",
+          "columns": [
+            "title"
+          ]
+        }
+      },
+      {
+        "verbose": "mcq",
+        "name": "mcq",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "lecture_mcqs",
+            "parentPk": "lecture_id",
+            "childPk": "mcq_id"
+          },
+          "ref": {
+            "table": "mcq",
+            "pk": "mcq_id",
+            "columns": [
+              "title"
+            ]
+          }
+        }
+      },
+      {
+        "verbose": "assignments",
+        "name": "assignments",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "lecture_assignments",
+            "parentPk": "lecture_id",
+            "childPk": "assignment_id"
+          },
+          "ref": {
+            "table": "assignments",
+            "pk": "assignment_id",
+            "columns": [
+              "title"
+            ]
+          }
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "contents": {
+    "slug": "contents",
+    "table": {
+      "name": "contents",
+      "pk": "content_id",
+      "verbose": "contents"
+    },
+    "columns": [
+      {
+        "verbose": "content_id",
+        "name": "content_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "content_link",
+        "name": "content_link",
+        "control": {
+          "file": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "content_type",
+        "name": "content_type",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "content_size",
+        "name": "content_size",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "duration",
+        "name": "duration",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "lecture_id",
+        "name": "lecture_id",
+        "control": {
+          "select": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "lectures",
+          "pk": "lecture_id",
+          "columns": [
+            "title"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "mcq": {
+    "slug": "mcq",
+    "table": {
+      "name": "mcq",
+      "pk": "mcq_id",
+      "verbose": "mcq"
+    },
+    "columns": [
+      {
+        "verbose": "mcq_id",
+        "name": "mcq_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "title",
+        "name": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "description",
+        "name": "description",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "lecture_mcqs": {
+    "slug": "lecture_mcqs",
+    "table": {
+      "name": "lecture_mcqs",
+      "pk": "lecture_mcq_id",
+      "verbose": "lecture_mcqs"
+    },
+    "columns": [
+      {
+        "verbose": "lecture_id",
+        "name": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "mcq_id",
+        "name": "mcq_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_mcq_id",
+        "verbose": "lecture_mcq_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "mcq_questions": {
+    "slug": "mcq_questions",
+    "table": {
+      "name": "mcq_questions",
+      "pk": "mcq_question_id",
+      "verbose": "mcq_questions"
+    },
+    "columns": [
+      {
+        "verbose": "mcq_question_id",
+        "name": "mcq_question_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "marks",
+        "name": "marks",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "mcq_type",
+        "name": "mcq_type",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "mcq_id",
+        "name": "mcq_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "mcq",
+          "pk": "mcq_id",
+          "columns": [
+            "title"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "options": {
+    "slug": "options",
+    "table": {
+      "name": "options",
+      "pk": "option_id",
+      "verbose": "options"
+    },
+    "columns": [
+      {
+        "verbose": "option_id",
+        "name": "option_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "option",
+        "name": "option",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "reason",
+        "name": "reason",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "is_correct",
+        "name": "is_correct",
+        "control": {
+          "radio": true,
+          "options": [
+            "True",
+            "False"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": null,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "mcq_question_id",
+        "name": "mcq_question_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "mcq_questions",
+          "pk": "mcq_question_id",
+          "columns": [
+            "mcq_question_id"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "assignments": {
+    "slug": "assignments",
+    "table": {
+      "name": "assignments",
+      "pk": "assignment_id",
+      "verbose": "assignments"
+    },
+    "columns": [
+      {
+        "verbose": "assignment_id",
+        "name": "assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "title",
+        "name": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "instruction",
+        "name": "instruction",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "video_link",
+        "name": "video_link",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "marks",
+        "name": "marks",
+        "control": {
+          "number": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "select": true,
+          "options": [
+            "1:True",
+            "0:False"
+          ]
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "skill",
+        "name": "skill",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "skill_assignment",
+            "parentPk": "assignment_id",
+            "childPk": "skill_id"
+          },
+          "ref": {
+            "table": "skill",
+            "pk": "skill_id",
+            "columns": [
+              "skill_name"
+            ]
+          }
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "lecture_assignments": {
+    "slug": "lecture_assignments",
+    "table": {
+      "name": "lecture_assignments",
+      "pk": "lecture_assignment_id",
+      "verbose": "lecture_assignments"
+    },
+    "columns": [
+      {
+        "verbose": "lecture_id",
+        "name": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "assignment_id",
+        "name": "assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_assignment_id",
+        "verbose": "lecture_assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "mentors": {
+    "slug": "mentors",
+    "table": {
+      "name": "mentors",
+      "pk": "mentor_id",
+      "verbose": "mentors"
+    },
+    "columns": [
+      {
+        "verbose": "mentor_id",
+        "name": "mentor_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "experties",
+        "name": "experties",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "experience",
+        "name": "experience",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "linked_in_link",
+        "name": "linked_in_link",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "twitter_link",
+        "name": "twitter_link",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "instagram_link",
+        "name": "instagram_link",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "about",
+        "name": "about",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "radio": true,
+          "options": [
+            "0",
+            "1"
+          ]
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "user_id",
+        "name": "user_id",
+        "control": {
+          "select": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "users",
+          "pk": "user_id",
+          "columns": [
+            "name"
+          ]
+        }
+      },
+      {
+        "verbose": "lectures",
+        "name": "lectures",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "lecture_mentors",
+            "parentPk": "mentor_id",
+            "childPk": "lecture_id"
+          },
+          "ref": {
+            "table": "lectures",
+            "pk": "lecture_id",
+            "columns": [
+              "title"
+            ]
+          }
+        }
+      },
+      {
+        "verbose": "sessions",
+        "name": "sessions",
+        "control": {
+          "select": true,
+          "multiple": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": true
+        },
+        "manyToMany": {
+          "link": {
+            "table": "mentor_sessions",
+            "parentPk": "mentor_id",
+            "childPk": "session_id"
+          },
+          "ref": {
+            "table": "sessions",
+            "pk": "session_id",
+            "columns": [
+              "agenda"
+            ]
+          }
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "lecture_mentors": {
+    "slug": "lecture_mentors",
+    "table": {
+      "name": "lecture_mentors",
+      "pk": "lecture_mentor_id",
+      "verbose": "lecture_mentors"
+    },
+    "columns": [
+      {
+        "verbose": "mentor_id",
+        "name": "mentor_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "lecture_id",
+        "name": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_mentor_id",
+        "verbose": "lecture_mentor_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "sessions": {
+    "slug": "sessions",
+    "table": {
+      "name": "sessions",
+      "pk": "session_id",
+      "verbose": "sessions"
+    },
+    "columns": [
+      {
+        "verbose": "session_id",
+        "name": "session_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "time",
+        "name": "time",
+        "control": {
+          "date": true
+        },
+        "type": "date",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "agenda",
+        "name": "agenda",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "total_attendees",
+        "name": "total_attendees",
+        "control": {
+          "number": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "availability",
+        "name": "availability",
+        "control": {
+          "number": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "cost",
+        "name": "cost",
+        "control": {
+          "number": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "duration",
+        "name": "duration",
+        "control": {
+          "date": true
+        },
+        "type": "date",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "is_paid",
+        "name": "is_paid",
+        "control": {
+          "radio": true,
+          "options": [
+            "True",
+            "False"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "zoom_link",
+        "name": "zoom_link",
+        "control": {
+          "textarea": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "radio": true,
+          "options": [
+            "0",
+            "1"
+          ]
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "mentor_sessions": {
+    "slug": "mentor_sessions",
+    "table": {
+      "name": "mentor_sessions",
+      "pk": "mentor_session_id",
+      "verbose": "mentor_sessions"
+    },
+    "columns": [
+      {
+        "verbose": "mentor_id",
+        "name": "mentor_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "session_id",
+        "name": "session_id",
+        "control": {
+          "text": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "mentor_session_id",
+        "verbose": "mentor_session_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "personal_questions": {
+    "slug": "personal_questions",
+    "table": {
+      "name": "personal_questions",
+      "pk": "personal_question_id",
+      "verbose": "personal_questions"
+    },
+    "columns": [
+      {
+        "name": "personal_question_id",
+        "verbose": "personal_question_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "question",
+        "verbose": "question",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "description",
+        "verbose": "description",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "personal_question_options": {
+    "slug": "personal_question_options",
+    "table": {
+      "name": "personal_question_options",
+      "pk": "personal_question_options_id",
+      "verbose": "personal_question_options"
+    },
+    "columns": [
+      {
+        "name": "personal_question_options_id",
+        "verbose": "personal_question_options_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "options",
+        "verbose": "options",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "personal_question_id",
+        "verbose": "personal_question_id",
+        "control": {
+          "select": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "personal_questions",
+          "pk": "personal_question_id",
+          "columns": [
+            "question"
+          ]
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_course_certificate": {
+    "slug": "user_course_certificate",
+    "table": {
+      "name": "user_course_certificate",
+      "pk": "user_course_certificate_id",
+      "verbose": "user_course_certificate"
+    },
+    "columns": [
+      {
+        "name": "user_course_certificate_id",
+        "verbose": "user_course_certificate_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "certificate_link",
+        "verbose": "certificate_link",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_course_id",
+        "verbose": "user_course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_course_modules": {
+    "slug": "user_course_modules",
+    "table": {
+      "name": "user_course_modules",
+      "pk": "user_course_module_id",
+      "verbose": "user_course_modules"
+    },
+    "columns": [
+      {
+        "name": "user_course_module_id",
+        "verbose": "user_course_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "status",
+        "verbose": "status",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_id",
+        "verbose": "course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_module_id",
+        "verbose": "course_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_courses": {
+    "slug": "user_courses",
+    "table": {
+      "name": "user_courses",
+      "pk": "user_course_id",
+      "verbose": "user_courses"
+    },
+    "columns": [
+      {
+        "name": "user_course_id",
+        "verbose": "user_course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "status",
+        "verbose": "status",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_id",
+        "verbose": "course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_lectures": {
+    "slug": "user_lectures",
+    "table": {
+      "name": "user_lectures",
+      "pk": "user_lecture_id",
+      "verbose": "user_lectures"
+    },
+    "columns": [
+      {
+        "name": "user_lecture_id",
+        "verbose": "user_lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "modules",
+        "verbose": "modules",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "status",
+        "verbose": "status",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "progress",
+        "verbose": "progress",
+        "control": {
+          "text": true
+        },
+        "type": "float",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_id",
+        "verbose": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_module_id",
+        "verbose": "course_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_personal_questions": {
+    "slug": "user_personal_questions",
+    "table": {
+      "name": "user_personal_questions",
+      "pk": "user_personal_questions_id",
+      "verbose": "user_personal_questions"
+    },
+    "columns": [
+      {
+        "name": "user_personal_questions_id",
+        "verbose": "user_personal_questions_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "personal_question_id",
+        "verbose": "personal_question_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "personal_question_option_id",
+        "verbose": "personal_question_option_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "skill": {
+    "slug": "skill",
+    "table": {
+      "name": "skill",
+      "pk": "skill_id",
+      "verbose": "skill"
+    },
+    "columns": [
+      {
+        "name": "skill_id",
+        "verbose": "skill_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "skill_name",
+        "verbose": "skill_name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "skill_assignment": {
+    "slug": "skill_assignment",
+    "table": {
+      "name": "skill_assignment",
+      "pk": "skill_assignment_id",
+      "verbose": "skill_assignment"
+    },
+    "columns": [
+      {
+        "name": "skill_assignment_id",
+        "verbose": "skill_assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "skill_id",
+        "verbose": "skill_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "assignment_id",
+        "verbose": "assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "lecture_reference": {
+    "slug": "lecture_reference",
+    "table": {
+      "name": "lecture_reference",
+      "pk": "lecture_reference_id",
+      "verbose": "lecture_reference"
+    },
+    "columns": [
+      {
+        "name": "lecture_reference_id",
+        "verbose": "lecture_reference_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "reference",
+        "verbose": "reference",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "reference_type",
+        "verbose": "reference_type",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "lecture_id",
+        "verbose": "lecture_id",
+        "control": {
+          "select": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "lectures",
+          "pk": "lecture_id",
+          "columns": [
+            "title"
+          ]
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "articles": {
+    "slug": "articles",
+    "table": {
+      "name": "articles",
+      "pk": "article_id",
+      "verbose": "articles"
+    },
+    "columns": [
+      {
+        "name": "article_id",
+        "verbose": "article_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "title",
+        "verbose": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "subtitle",
+        "verbose": "subtitle",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "preview_image",
+        "verbose": "preview_image",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "uploaded_date",
+        "verbose": "uploaded_date",
+        "control": {
+          "datetime": true
+        },
+        "type": "datetime",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "minutes_to_read",
+        "verbose": "minutes_to_read",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "writer_name",
+        "verbose": "writer_name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "article_text",
+        "verbose": "article_text",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "article_image",
+        "verbose": "article_image",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "health_modules": {
+    "slug": "health_modules",
+    "table": {
+      "name": "health_modules",
+      "pk": "health_module_id",
+      "verbose": "health_modules"
+    },
+    "columns": [
+      {
+        "name": "health_module_id",
+        "verbose": "health_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "title",
+        "verbose": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "preview_image",
+        "verbose": "preview_image",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "time",
+        "verbose": "time",
+        "control": {
+          "text": true
+        },
+        "type": "time",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "about",
+        "verbose": "about",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "mentor_id",
+        "name": "mentor_id",
+        "control": {
+          "select": true
+        },
+        "type": "int(11)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        },
+        "oneToMany": {
+          "table": "mentors",
+          "pk": "mentor_id",
+          "columns": [
+            "experties"
+          ]
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "interviews": {
+    "slug": "interviews",
+    "table": {
+      "name": "interviews",
+      "pk": "interview_id",
+      "verbose": "interviews"
+    },
+    "columns": [
+      {
+        "name": "interview_id",
+        "verbose": "interview_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "title",
+        "verbose": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "preview_image",
+        "verbose": "preview_image",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "time",
+        "verbose": "time",
+        "control": {
+          "text": true
+        },
+        "type": "time",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "link",
+        "verbose": "link",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "scripts": {
+    "slug": "scripts",
+    "table": {
+      "name": "scripts",
+      "pk": "script_id",
+      "verbose": "scripts"
+    },
+    "columns": [
+      {
+        "name": "script_id",
+        "verbose": "script_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "title",
+        "verbose": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "script_type",
+        "verbose": "script_type",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(50)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "minutes_to_read",
+        "verbose": "minutes_to_read",
+        "control": {
+          "text": true
+        },
+        "type": "time",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "no_of_characters",
+        "verbose": "no_of_characters",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "written_by",
+        "verbose": "written_by",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "synopsis",
+        "verbose": "synopsis",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "performance_notes",
+        "verbose": "performance_notes",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "script_text",
+        "verbose": "script_text",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "self_assessment_checklist": {
+    "slug": "self_assessment_checklist",
+    "table": {
+      "name": "self_assessment_checklist",
+      "pk": "self_assessment_checklist_id",
+      "verbose": "self_assessment_checklist"
+    },
+    "columns": [
+      {
+        "name": "self_assessment_checklist_id",
+        "verbose": "self_assessment_checklist_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "type",
+        "verbose": "type",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "assignment_id",
+        "verbose": "assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_course_module_feedback": {
+    "slug": "user_course_module_feedback",
+    "table": {
+      "name": "user_course_module_feedback",
+      "pk": "user_course_module_feedback_id",
+      "verbose": "user_course_module_feedback"
+    },
+    "columns": [
+      {
+        "name": "user_course_module_feedback_id",
+        "verbose": "user_course_module_feedback_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_module_id",
+        "verbose": "course_module_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "feedback",
+        "verbose": "feedback",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "rating",
+        "verbose": "rating",
+        "control": {
+          "text": true
+        },
+        "type": "float",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_lecture_assignments": {
+    "slug": "user_lecture_assignments",
+    "table": {
+      "name": "user_lecture_assignments",
+      "pk": "user_lecture_assignment_id",
+      "verbose": "user_lecture_assignments"
+    },
+    "columns": [
+      {
+        "name": "user_lecture_assignment_id",
+        "verbose": "user_lecture_assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_lecture_id",
+        "verbose": "user_lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_assignment_id",
+        "verbose": "lecture_assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "upload_file_link",
+        "verbose": "upload_file_link",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "assignment_reply",
+        "verbose": "assignment_reply",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_complete",
+        "verbose": "is_complete",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "obtain_marks",
+        "verbose": "obtain_marks",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "timestamp",
+        "allowNull": true,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "timestamp",
+        "allowNull": true,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_lecture_mcqs": {
+    "slug": "user_lecture_mcqs",
+    "table": {
+      "name": "user_lecture_mcqs",
+      "pk": "user_lecture_mcq_id",
+      "verbose": "user_lecture_mcqs"
+    },
+    "columns": [
+      {
+        "name": "user_lecture_mcq_id",
+        "verbose": "user_lecture_mcq_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_mcq_id",
+        "verbose": "lecture_mcq_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "option_id",
+        "verbose": "option_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_correct",
+        "verbose": "is_correct",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "marks",
+        "verbose": "marks",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "lecture_id",
+        "verbose": "lecture_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_purchases": {
+    "slug": "user_purchases",
+    "table": {
+      "name": "user_purchases",
+      "pk": "user_purchase_id",
+      "verbose": "user_purchases"
+    },
+    "columns": [
+      {
+        "name": "user_purchase_id",
+        "verbose": "user_purchase_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "course_id",
+        "verbose": "course_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "session_id",
+        "verbose": "session_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "status",
+        "verbose": "status",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "cost",
+        "verbose": "cost",
+        "control": {
+          "text": true
+        },
+        "type": "float",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "payment",
+        "verbose": "payment",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "date_of_purchase",
+        "verbose": "date_of_purchase",
+        "control": {
+          "text": true
+        },
+        "type": "date",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "payment_id",
+        "verbose": "payment_id",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "user_self_assessment_checklist": {
+    "slug": "user_self_assessment_checklist",
+    "table": {
+      "name": "user_self_assessment_checklist",
+      "pk": "user_self_assessment_checklist_id",
+      "verbose": "user_self_assessment_checklist"
+    },
+    "columns": [
+      {
+        "name": "user_self_assessment_checklist_id",
+        "verbose": "user_self_assessment_checklist_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "user_id",
+        "verbose": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "assignment_id",
+        "verbose": "assignment_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "self_assessment_checklist_id",
+        "verbose": "self_assessment_checklist_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": false
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  },
+  "auditions": {
+    "slug": "auditions",
+    "table": {
+      "name": "auditions",
+      "pk": "audition_id",
+      "verbose": "auditions"
+    },
+    "columns": [
+      {
+        "name": "audition_id",
+        "verbose": "audition_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "title",
+        "verbose": "title",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "short_address",
+        "verbose": "short_address",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "location",
+        "verbose": "location",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "gender",
+        "verbose": "gender",
+        "control": {
+          "select": true,
+          "options": [
+            "Male",
+            "Female"
+          ]
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "age_min",
+        "verbose": "age_min",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "age_max",
+        "verbose": "age_max",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "audition_date",
+        "verbose": "audition_date",
+        "control": {
+          "date": true
+        },
+        "type": "date",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "contact_mobile",
+        "verbose": "contact_mobile",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(20)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "contact_email",
+        "verbose": "contact_email",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "role_description",
+        "verbose": "role_description",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "additional_skills",
+        "verbose": "additional_skills",
+        "control": {
+          "text": true
+        },
+        "type": "text",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "created_at",
+        "verbose": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "updated_at",
+        "verbose": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "is_delete",
+        "verbose": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  }
+}

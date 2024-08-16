@@ -1,0 +1,37 @@
+{
+  "name": "express-admin-examples",
+  "version": "1.0.0",
+  "description": "Express Admin Examples",
+  "private": true,
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/simov/express-admin-examples",
+  "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (https://simov.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simov/express-admin-examples.git"
+  },
+  "scripts": {
+    "path": "node path.js",
+    "start": " nodemon start.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.623.0",
+    "@aws-sdk/credential-provider-node": "^3.623.0",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.33.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-admin": "^2.0.0",
+    "express-session": "^1.18.0",
+    "moment": "^2.30.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "pg": "^8.9.0",
+    "sqlite3": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
